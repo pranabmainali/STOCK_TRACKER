@@ -31,7 +31,7 @@ public class LoginFrame extends JFrame implements ActionListener{
         this.guiInterface = guiInterface;
 
         //Frame
-        this.setTitle("Health Simple");
+        this.setTitle("Stock tacker");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
         this.setSize(500, 500);
