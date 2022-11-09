@@ -2,8 +2,8 @@ package Interface;
 import java.util.ArrayList;
 
 public class Main_Interface {
-    ArrayList<User> listOfUsers;
-    User currentUser;
+    private ArrayList<User> listOfUsers;
+    private User currentUser;
 
 
     public Main_Interface() {
@@ -22,6 +22,7 @@ public class Main_Interface {
     public boolean logIn(String username, String password) {
         if (listOfUsers.size()>0) {
             for (int i = 0; i < listOfUsers.size(); i++) {
+                System.out.println(username);
                 if (listOfUsers.get(i).getUserName().equals(username)) {
                     if (listOfUsers.get(i).getPassword().equals(password)){
                         currentUser = listOfUsers.get(i);
@@ -50,7 +51,8 @@ public class Main_Interface {
             String firstname,
             String lastname) {
 
-        return false;
+        listOfUsers.add(new User(username, password, firstname, lastname));
+        return true;
     }
 
     public ArrayList<User> getListofUsers(){
