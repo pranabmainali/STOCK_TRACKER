@@ -35,7 +35,7 @@ public class SignUpFrame extends JFrame implements ActionListener {
         this.guiInterface = guiInterface;
 
         // Frame
-        this.setTitle("Health Simple");
+        this.setTitle("Stock Tracker");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
         this.setSize(800, 800);

@@ -14,7 +14,7 @@ public class MainAppFrame extends JFrame {
     public MainAppFrame(MainGUIInterface mainGUIInterface){
         this.mainGUIInterface = mainGUIInterface;
 
-        this.setTitle("Health Simple");
+        this.setTitle("Stock Tracker");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
         this.setSize(500, 500);
