@@ -59,6 +59,11 @@ public class Main_Interface {
         return listOfUsers;
     }
 
+    public User getCurrentUser()
+    {
+        return currentUser;
+    }
+
     /**
      * simple run function to see if current login function works
      */
