@@ -8,7 +8,7 @@ import Interface.ConditionEnum;
 
 public class MainAppFrame extends JFrame {
     MainGUIInterface mainGUIInterface;
-    JPanel alertContainer;
+    JPanel alertPanel;
     
 
     public MainAppFrame(MainGUIInterface mainGUIInterface){
@@ -24,8 +24,8 @@ public class MainAppFrame extends JFrame {
         //this.setIconImage(health_fitness_icon.getImage());
 
         //adding everything to everything
-        alertContainer = new AlertContainer("AAPL", ConditionEnum.Equal, 120.00);
-        this.add(alertContainer);
+        alertPanel = new AlertPanel(this.mainGUIInterface);
+        this.add(alertPanel);
 
 
         this.setVisible(true);

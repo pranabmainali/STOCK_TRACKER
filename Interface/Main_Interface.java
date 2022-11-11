@@ -73,7 +73,13 @@ public class Main_Interface {
                 "idk",
                 "Pranab",
                 "Mainali");
+
+        newUser.addAlert(new Alert(new Stock("AAPL"), 120, ConditionEnum.Equal));
+        newUser.addAlert(new Alert(new Stock("AAPL"), 120, ConditionEnum.Equal));
+        newUser.addAlert(new Alert(new Stock("AAPL"), 120, ConditionEnum.Equal));
         listOfUsers.add(newUser);
+
+
     }
 
 }
